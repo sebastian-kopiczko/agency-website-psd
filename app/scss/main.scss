@@ -10,3 +10,13 @@ h5,
 h6 {
     margin: 0;
 }
+
+footer {
+    text-align: center;
+    background: $page-gray;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

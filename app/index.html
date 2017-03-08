@@ -11,29 +11,37 @@
     <link rel="stylesheet" href="css/styles.css"> </head>
 
 <body>
-    <header class="header"><span class="header__icon" aria-hidden="true"><a href="#"></a></span>
-        <nav class="header__nav nav">
-            <ul class="nav__menu">
-                <li class="nav__item"><a href="#">home</a></li>
-                <li class="nav__item"><a href="#">who we are</a></li>
-                <li class="nav__item"><a href="#">services</a></li>
-                <li class="nav__item"><a href="#">work</a></li>
-                <li class="nav__item"><a href="#">industries</a></li>
-                <li class="nav__item"><a href="#">feature</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="header"><span class="header__icon icon" aria-hidden="true"><a href="#"></a></span> </header>
     <section class="home">
-        <div class="home__column-left">
-            <div class="home__text">
-                <h1>agency</h1>
-                <h2>try our product</h2>
-                <p>Ext JS framework. Ionic is a JavaScript plugins; plugins include autoprefixer, future CSS. JSHint is a package manager with identical input. Rhino, like npm repository. RxJS is a framework for Test-Driven Development.</p>
-            </div><span class="arrow-scroll">Scroll</span></div>
-        <div class="home__column-right">
-            <div class="home__circles"> <span class="circle"></span> <span class="circle"></span> <span class="circle"></span> <span class="circle"></span> <span class="circle"></span> <span class="circle"></span> </div>
+        <div class="home__column-left" id="left-bar">
+            <button class="menu-btn"> <span class="icon"></span> </button>
+            <div class="text">
+                <article>
+                    <h1>agency</h1>
+                    <h2>try our product</h2>
+                    <p>Ext JS framework. Ionic is a JavaScript plugins; plugins include autoprefixer, future CSS. JSHint is a package manager with identical input. Rhino, like npm repository. RxJS is a framework for Test-Driven Development.</p>
+                </article>
+            </div> <span class="arrow-scroll"></span></div>
+        <div class="home__column-right" id="navbar">
+            <nav class="nav" id="side-menu">
+                <ul class="nav__menu">
+                    <li class="nav__item"> <a href="#hello" class="circle active">home</a> </li>
+                    <li class="nav__item"> <a href="#experience" class="circle">who we are</a> </li>
+                    <li class="nav__item"> <a href="#work" class="circle">work</a> </li>
+                    <li class="nav__item"> <a href="#feature" class="circle">feature</a> </li>
+                    <li class="nav__item"> <a href="#blog" class="circle">our blog</a> </li>
+                </ul>
+            </nav>
         </div>
     </section>
+    <section class="hello" id="hello"></section>
+    <section class="experience" id="experience"></section>
+    <section class="work" id="work"></section>
+    <section class="feature" id="feature"></section>
+    <section class="blog" id="blog"></section>
+    <footer class="footer" id="footer">Copyright &copy; Sebastian Kopiczko 2017</footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/code.js"></script>
 </body>
 
 </html>
