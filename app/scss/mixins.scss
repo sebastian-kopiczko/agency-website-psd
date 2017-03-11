@@ -21,7 +21,7 @@ $width) {
     height: $height;
     width: $width;
     top: 30px;
-    background-color: $light;
+    background-color: $page-light;
 }
 
 @mixin icon-before($height,
@@ -31,7 +31,7 @@ $top) {
     position: absolute;
     width: $width;
     height: $height;
-    background-color: $light;
+    background-color: $page-light;
     content: "";
     top: $top;
 }
@@ -43,7 +43,7 @@ $top) {
     position: absolute;
     width: $width;
     height: $height;
-    background-color: $light;
+    background-color: $page-light;
     content: "";
     top: $top;
 }
