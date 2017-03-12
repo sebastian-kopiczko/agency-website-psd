@@ -1,0 +1,100 @@
+    .feature {
+        height: 30rem;
+        margin: 0;
+        padding: 2rem;
+        background: #000;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background: {
+            image: url(../img/mockup.jpg);
+            position: 20% 0%;
+            size: contain;
+            repeat: no-repeat;
+        }
+        &__text {
+            color: $page-gray;
+            width: 50%;
+            margin-right: 3rem;
+            h1,
+            h2 {
+                text-transform: uppercase;
+            }
+            p {
+                width: 70%;
+                position: relative;
+                padding-top: 1.5rem;
+                @include before-bar($page-gray);
+            }
+        }
+        &__btn {
+            color: $page-gray;
+            width: 120px;
+            margin-right: 4rem;
+            &:hover,
+            &:focus {
+                color: #111;
+                font-weight: bolder;
+                background: $page-gray;
+            }
+        }
+        @media only screen and (max-width: 1200px) {
+            background-position: -10% 0%;
+            &__text {
+                p {
+                    width: 100%;
+                }
+            }
+        }
+        @media only screen and (max-width: 1040px) {
+            background-position: -150% 0%;
+        }
+        @media only screen and (max-width: 940px) {
+            background: {
+                image: url('../img/mockupS.jpg');
+                position: center;
+            }
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+            &__text {
+                width: 50%;
+                margin: 0;
+                p {
+                    text-align: left;
+                    background: rgba(0, 0, 0, 0.7);
+                    &:before {
+                        right: 0;
+                    }
+                }
+            }
+            .btn-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__btn {
+                margin: 0;
+            }
+        }
+        @media only screen and (max-width: 750px) {
+            height: auto;
+            background: #000;
+            &__text {
+                width: 90%;
+                height: 100%;
+                position: relative;
+            }
+            .btn-wrapper {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+        @media only screen and (max-width: 380px) and (max-height: 640px) {
+            &__text {
+                width: 100%;
+                position: relative;
+                p {}
+            }
+        }
+    }
