@@ -30,3 +30,20 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.btn {
+    margin-top: 1rem;
+    width: 11rem;
+    min-height: 2.3rem;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.85rem;
+    background: $page-dark;
+    transition: all .3s ease-in-out;
+    &:hover,
+    &:focus {
+        color: $page-blue;
+        background: rgba(13, 4, 16, 0.91);
+        box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.7);
+    }
+}

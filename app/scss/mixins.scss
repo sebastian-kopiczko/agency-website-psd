@@ -47,3 +47,26 @@ $top) {
     content: "";
     top: $top;
 }
+
+@mixin before-bar($color) {
+    &:before {
+        content: '';
+        width: 5rem;
+        height: 1px;
+        border-top: 4px solid $color;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@mixin child-service-icon($num) {
+    &:nth-child(#{$num}) {
+        &:before {
+            position: absolute;
+            bottom: 3rem;
+            left: 0;
+            right: 0;
+            content: url('../img/services'+$num+'.jpg');
+        }
+    }
+}
